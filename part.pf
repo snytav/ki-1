@@ -1,0 +1,37 @@
+      include 'laser1.par'
+            include 'laser2.par'
+            include 'laser3.par'
+            include 'laser4.par'
+   	    integer deb,lmp2,bjmp,jdeb,outf,lmpf,ons,omp,outterm
+	    integer fte,fti,fee,fhh,map,rdm,rlm,fne,fni,m7nt2,attr
+	    integer disf,beamf,magf,grtot,out3d,smooth,ctrl_attr
+	    integer radf,totsteps,ntd,ntd1,lnt1,fnb,outfsrc,write_all
+	    real*8 beta0,tex0,tey0,tez0,rbd,rimp,lx0,ly0,lz0,Tb,mfrq
+	    real*8 melb,elmod
+            real*8 xmp,ymp,zmp 
+            real*8 xmb,ymb,zmb 
+	    integer jx_four
+	    integer chnout,enout,curbal,out1dd,curout,beam_write
+	    integer wpbeam,wpelec,wpion,baddst
+	    parameter(wpbeam=0,wpelec=0,wpion=0)
+            parameter(xmp=1.1424,ymp=0.025,zmp=0.05,baddst=0)
+            parameter(xmb=0.2,ymb=0.025,zmb=0.05)
+	    parameter(out1dd=0,curout=0)
+	    parameter(enout=0,curbal=0,write_all=0)
+	    parameter(outfsrc=1,chnout=0,ctrl_attr=0)
+	    parameter(melb=1.0e0,elmod=0e0,smooth=0)
+	    parameter(lx0=1.1424,Tb=0.14,mfrq=0d0)
+	    parameter(ly0=0.05,lz0=0.05,ntd=10000000,ntd1=40)
+	    parameter(beta0=1d0,rbd=2e-4*1,rimp=0.2,grtot=10)
+	    parameter(beamf=1,magf=1,lnt1=1)
+	    parameter(tex0=1e-3,tey0=1e-3,tez0=1e-3)
+            parameter(bjmp=jmp/5,totSteps=1*1,fnb=0)
+	    parameter(fne=0,fni=0,radf=0,disf=0)
+	    parameter(deb=1,outf=0,omp=100,ons=0,jdeb=1)
+	    parameter(fte=0,fti=0,fee=0,fhh=0)
+	    parameter(map=0,rdm=0,rlm=0,out3d=0)
+	    parameter(outterm=0,m7nt2=1,beam_write=0)
+            parameter(lmp2=nproc*(lmp-2)+1,lmpf=nproc*(lmp-2)+2)
+            parameter(jx_four=0)
+	    integer me,mev,meh,vertComm,horComm
+	    common/globme/me,mev,meh,vertComm,horComm 

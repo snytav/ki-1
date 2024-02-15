@@ -1,0 +1,5 @@
+      external amicro
+      real*8 amicro,tm1
+      real*8 psrt,fsrt,colt,gatht
+      common/mpitime/psrt,fsrt,colt,gatht
+

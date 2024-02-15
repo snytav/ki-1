@@ -1,0 +1,2 @@
+      integer nproc,fproc
+            parameter(nproc=1,fproc=1)

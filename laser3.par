@@ -1,0 +1,2 @@
+      integer kmp
+            parameter(kmp=6)

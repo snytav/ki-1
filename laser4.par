@@ -1,0 +1,2 @@
+      integer jmp
+            parameter(jmp=32000/fproc)

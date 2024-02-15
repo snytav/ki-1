@@ -1,0 +1,3 @@
+      include 'procs.par'
+            integer lmp
+            parameter(lmp=4/nproc+2)
